@@ -1,0 +1,266 @@
+/*========== HTML & BODY ==========*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/*========== BODY BACKGROUNDS ==========*/
+.body-home {
+  background-image: url('images/background-01-land.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.body-meals {
+  background-image: url('images/soft-pastel-yellow.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #2F4F4F;
+}
+
+/*========== CUSTOM CHECKBOXES ==========*/
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 30px;
+  display: inline-block;
+  margin-bottom: 10px;
+  user-select: none;
+  color: #2F4F4F;
+}
+
+input[type=checkbox] + label:before {
+  content: "\f0c8"; 
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  line-height: 20px;
+  color: #2F4F4F;
+}
+
+input[type=checkbox]:checked + label:before {
+  content: "\f14a"; 
+  color: #556B2F;
+}
+
+/*========== HEADER ==========*/
+.header {
+  background-color: #3E4A3D;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  position: fixed;
+  overflow: hidden;
+  text-align: center;
+  z-index: 1000;
+}
+
+.header i {
+  float: left;
+  padding: 14px 8px 8px 17px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.header img {
+  width: 150px;
+  padding-top: 12px;
+}
+
+/*========== HOME PAGE ==========*/
+#home-logo-img {
+  width: 50px;
+  display: block;
+  margin: auto;
+  padding: 25px 10px 10px 10px;
+}
+
+#logo-text {
+  display: block;
+  margin: -35px auto 0 auto;
+  width: 500px;
+  max-width: 90%;
+  height: auto;
+}
+
+/*========== HOME MENU ==========*/
+.home-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  margin-top: 100px;    
+  gap: 10px;           
+}
+
+.home-menu-item {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  border: 5px solid white;
+  display: block;
+  width: 80%;  
+  margin: 0;   
+}
+
+/*========== MEALS / DRINKS PAGE ==========*/
+#meals {
+  padding-top: 60px;
+}
+
+.meals-list a {
+  color: #2F4F4F;
+  text-decoration: none;
+}
+
+.meals-list-item {
+  border: 2px solid #2F4F4F;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  position: relative;
+}
+
+.meals-list-item h1 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #2F4F4F;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 40px;
+  position: relative;
+}
+
+.meals-list-item h1 i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #556B2F;
+  font-size: 22px;
+}
+
+.meals-list-item p {
+  font-size: 15px;
+  font-style: italic;
+  color: #2F4F4F;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+
+/*========== RESTAURANT / DRINK DETAILS PAGE ==========*/
+.restaurant-details {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  margin: 20px;
+}
+
+.restaurant-details h1 {
+  font-size: 25px;
+  text-align: center;
+  border: 2px solid #2F4F4F;
+  margin: 10px 0;
+  padding: 5px;
+  color: #2F4F4F;
+}
+
+.restaurant-details p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.restaurant-details-img {
+  width: 100%; /* ensures image fits the container */
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+/*========== FORM / EXTRAS ==========*/
+.restaurant-details-ingredients {
+  margin-top: 15px;
+}
+
+.restaurant-details-ingredients textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #2F4F4F;
+  resize: vertical;
+}
+
+.restaurant-details-ingredients h3 {
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+/*========== BACK BUTTON / THANK YOU PAGE ==========*/
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.back-button:hover {
+  background-color: #e65c00;
+}
+
+.thankyou-card {
+  border: 2px solid #2F4F4F;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  color: #2F4F4F;
+}
+
+.thankyou-card h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.thankyou-card p {
+  font-size: 16px;
+  font-style: italic;
+}
+
+/*========== LINKS & BUTTONS ==========*/
+.body-meals a,
+.meals-list a,
+.meals-list-item a,
+.restaurant-details a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.body-meals a:hover,
+.meals-list a:hover,
+.meals-list-item a:hover,
+.restaurant-details a:hover {
+  text-decoration: none;
+}
